@@ -3,8 +3,8 @@ import { useFonts ,Roboto_400Regular, Roboto_700Bold} from '@expo-google-fonts/r
 
 import { THEME } from './src/styles/theme';
 
-import { Signin } from './src/screens/Signin';
 import { Loading } from './src/components/Loading';
+import { Routes } from './src/routes';
 
 
 export default function App() {
@@ -18,7 +18,7 @@ export default function App() {
 				translucent
 			/>
 			{ fontsLoaded ? (
-				<Signin />
+				<Routes />
 			) : (
 				<Loading />
 			)}
